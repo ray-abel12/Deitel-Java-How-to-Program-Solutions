@@ -22,13 +22,20 @@ class ValidateISBNTest {
 			 //fail();
 			 assertFalse(result);
 			}
+		
 		@Test()
 		void NineDigitISBNAreNotAllowed() {
 			  ValidateISBN validator = new ValidateISBN();
-			 boolean result = validator.checkISBN("0140449115");
-			 assertFalse(result);
+			assertThrows(NumberFormatException.class, ()-> validator.checkISBN("140449115"));
+//			 assertFalse(result);
 			}
-
+		
+         @Test()
+         void nonNumericISBNAreNotAllowed() {
+        	ValidateISBN validator = new ValidateISBN();
+        	assertThrows(NumberFormatException.class,()-> validator.checkISBN("hello world"));
+        	//validator.checkISBN("hello world");
+         }
 	}
 	
 
