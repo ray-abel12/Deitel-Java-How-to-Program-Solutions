@@ -31,6 +31,7 @@ public class StudentTest {
 		
 		//updating profile with correct name 
 		System.out.println("the name of student1: "+ student1.getName());
+		System.out.println("the number of obj: "+ Student.getStudentCount());
 		
 		
 	}
