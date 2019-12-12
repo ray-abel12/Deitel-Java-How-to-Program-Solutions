@@ -5,8 +5,7 @@ package exercises;
 public class BasePlusCommissionEmployee extends CommissionEmployee{
 private double baseSalary; // base salary per week
 // six-argument constructor
-public BasePlusCommissionEmployee(String firstName, String lastName,
-String socialSecurityNumber, double grossSales,
+public BasePlusCommissionEmployee(String firstName, String lastName,String socialSecurityNumber, double grossSales,
 double commissionRate, double baseSalary) {
 	// explicit call to superclass CommissionEmployee constructor
 super(firstName, lastName, socialSecurityNumber,
