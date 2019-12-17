@@ -5,7 +5,8 @@ private int radius;
 
 Circle(int xcol, int ycol, int rad){
 	super(xcol,ycol);
-	radius = rad;
+	//it is more efficient to use the method call in case there is a  method validation in the set.
+	setRadius(rad);
 }
 public void setRadius(int rad) {
 	radius = rad; 
