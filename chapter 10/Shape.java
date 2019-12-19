@@ -27,5 +27,7 @@ public void set(int xcor, int ycor) {
 public void move(int x1,int y1) {
 	set(getX() + x1,getY() + y1);
 }
-
+public void draw() {
+	System.out.println("draw shape ar coordinate : " + getX() + ", " + getY());
+}
 }
