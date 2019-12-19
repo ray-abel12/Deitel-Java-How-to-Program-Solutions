@@ -1,6 +1,6 @@
 package exercise;
-
-public class Shape {
+//with the abstract it can not be instantiated 
+public abstract class Shape {
 private int x;
 private int y;
 
@@ -27,8 +27,7 @@ public void set(int xcor, int ycor) {
 public void move(int x1,int y1) {
 	set(getX() + x1,getY() + y1);
 }
-public void draw() {
-	System.out.println("draw shape at coordinate : " + getX() + ", " + getY());
-}
+//it forces the method that inherit to implement draw method
+public abstract void draw();
 
 }
