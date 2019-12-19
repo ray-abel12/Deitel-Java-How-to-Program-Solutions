@@ -15,4 +15,7 @@ public void setRadius(int rad) {
 public int getRadius() {
 	return radius;
 }
+public void draw() {
+	System.out.println("drawing a circle at: x :" + getX() + ", y: " + getY() + "radius: " + getRadius());
+}
 }
