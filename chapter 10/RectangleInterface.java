@@ -1,34 +1,39 @@
 package exercise;
 
 public class RectangleInterface implements ShapeInterface {
+private int x;
+private int y;
+private int width;
+private int height;
 
-	@Override
+RectangleInterface (int xcor,int ycor,int w,int h){
+	x = xcor;
+	y = ycor;
+	width = w;
+	height = h;
+}
+	
 	public int getX() {
-		// TODO Auto-generated method stub
-		return 0;
+		return x;
 	}
 
-	@Override
+	
 	public int getY() {
-		// TODO Auto-generated method stub
-		return 0;
+		return y;
 	}
 
-	@Override
 	public void setX(int xcor) {
-		// TODO Auto-generated method stub
-		
+		x = xcor;
 	}
 
-	@Override
+	
 	public void setY(int ycor) {
-		// TODO Auto-generated method stub
+	   x = ycor;
 		
 	}
 
-	@Override
 	public void draw() {
-		// TODO Auto-generated method stub
+	System.out.println("draw a rectangle");
 		
 	}
 
