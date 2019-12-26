@@ -6,7 +6,15 @@ public class UserTest {
 	}
 
 	public static void main(String[] args) {
-		//User user = new Staff();
+		User user = new User();
+		User staff = new Staff();
+		User editor = new Editor();
+
+		UserTest ut = new UserTest();
+		ut.printUserType(user);
+		ut.printUserType(staff);
+		ut.printUserType(editor);
+		
 
 	}
 
