@@ -1,5 +1,5 @@
 package exercise1;
 
-public class Editor {
+public class Editor extends User {
 
 }

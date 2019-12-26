@@ -1,5 +1,7 @@
 package exercise1;
 
-public class Staff {
+public class Staff extends User {
 
+	User user = new Staff();
+	
 }
