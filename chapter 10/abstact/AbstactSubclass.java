@@ -4,13 +4,13 @@ public class AbstactSubclass extends AbstactSuperclass {
 
 	@Override
 	void test1() {
-		// TODO Auto-generated method stub
+		System.out.println("test1");
 		
 	}
 
 	@Override
 	void test2() {
-		// TODO Auto-generated method stub
+		System.out.println("test2");
 		
 	}
 
