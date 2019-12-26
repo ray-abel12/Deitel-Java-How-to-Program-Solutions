@@ -4,6 +4,9 @@ public class UserTest {
 	public void printUserType(User u) {
 		u.printUserType();
 	}
+	public void saveWebLinks(User s) {
+		s.saveWebLinks();
+	}
 
 	public static void main(String[] args) {
 		User user = new User();
@@ -11,10 +14,13 @@ public class UserTest {
 		User editor = new Editor();
 
 		UserTest ut = new UserTest();
-		ut.printUserType(user);
-		ut.printUserType(staff);
-		ut.printUserType(editor);
-		
+		//ut.printUserType(user);
+		//ut.printUserType(staff);
+		//ut.printUserType(editor);
+		//ut.saveWebLinks(user);
+		editor.postAReview();
+		staff.postAReview();
+		 
 
 	}
 
