@@ -1,6 +1,6 @@
 package abstact;
 
-public class AbstactSubclass extends AbstactSuperclass {
+public abstract class AbstactSubclass extends AbstactSuperclass {
 
 	@Override
 	void test1() {
@@ -8,10 +8,7 @@ public class AbstactSubclass extends AbstactSuperclass {
 		
 	}
 
-	@Override
-	void test2() {
-		System.out.println("test2");
-		
-	}
+	
+	abstract void test3();
 
 }
