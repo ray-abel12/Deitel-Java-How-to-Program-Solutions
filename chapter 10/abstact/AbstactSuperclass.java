@@ -1,5 +1,7 @@
 package abstact;
 
-public class AbstactSuperclass {
+public abstract class AbstactSuperclass {
+	abstract void test1();
 
+	abstract void test2();
 }
