@@ -20,6 +20,8 @@ public class UserTest {
 		//ut.saveWebLinks(user);
 		editor.postAReview();
 		staff.postAReview();
+		user.postAReview();
+		user.saveWebLinks();
 		 
 
 	}
