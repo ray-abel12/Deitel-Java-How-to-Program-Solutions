@@ -1,29 +1,29 @@
+public class Car extends Vehicle {
 
-public class Car {
-    private int door;
-    private int wheel;
-    private String model;
-    private String engine;
-    private String color;
+    private int doors;
+    private int wheels;
+    private int gears;
+    private boolean isManual;
 
-    public void setEngin(String engine){
-        String validEngine = engine.toLowerCase();
-        if((validEngine.equals("v8")) || (validEngine.equals("v4"))){
-            this.engine = engine;
-        }else{
-            this.engine ="unknow";
-        }
+    private int currentGear;
 
+    public Car(String type, String name, int doors, int wheels, int gears, boolean isManual) {
+        super(type, name);
+        this.doors = doors;
+        this.wheels = wheels;
+        this.gears = gears;
+        this.isManual = isManual;
+        this.currentGear = 1;
     }
-    public String getEngine(){
-        return this.engine;
+    public void changeGear(int currentGear){
+        this.currentGear =currentGear;
+        System.out.println("car.setCurrent gear()changed to "+currentGear);
     }
-
-    public static void main(String[] args){
-        Car porch = new Car();
-        porch.setEngin("v2");
-        System.out.println(porch.getEngine());
-
-
+    public void changeVelocity(int speed,int direction){
+        move(speed,direction);
+        System.out.println("vehcle.changeVelocity  speed"+speed+"direction" + direction);
+    }
+    public void stop(){
+        System.out.println("car.stop");
     }
 }
