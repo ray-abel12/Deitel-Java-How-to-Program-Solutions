@@ -8,7 +8,7 @@ public class Minimum{
      int userCount = scan.nextInt();
      int[] numbers =readInteger(userCount);
      int minimum=findMin(numbers);
-     System.out.println("the minimum value is + ");
+     System.out.println("the minimum value is ");
      System.out.print(minimum);
  }
 
