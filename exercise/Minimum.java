@@ -12,7 +12,7 @@ public class Minimum{
      System.out.print(minimum);
  }
 
-    public static int[] readInteger(int count){
+    private static int[] readInteger(int count){
         int[] array =new int[count];
         System.out.println("enter elements");
         int arrayInput;
@@ -21,8 +21,8 @@ public class Minimum{
         }
         return array;
     }
-public static int findMin(int array[]){
-        int temp;
+private static int findMin(int array[]){
+       /* int temp;
         boolean flag = true;
         while (flag){
             flag =false;
@@ -31,12 +31,12 @@ public static int findMin(int array[]){
                 temp = array[i];
                 array[i] = array[i+1];
                 array[i + 1] = temp;
-                flag=true;
+                flag=true;*/
 
-            }
+          //  }
         }
             //Math.min(array[i],array[i+1]);
         }
-    return array[array.length-1];
+   // return array[array.length-1];
 }
 }
