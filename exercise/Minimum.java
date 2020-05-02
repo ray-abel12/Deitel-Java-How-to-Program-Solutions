@@ -34,9 +34,17 @@ private static int findMin(int array[]){
                 flag=true;*/
 
           //  }
+    int min = Integer.MAX_VALUE;
+    for(int i = 0;i<array.length;i++){
+        int value = array[i];
+        if(value < min){
+            min = value;
+        }
+    }
+    return min;
         }
             //Math.min(array[i],array[i+1]);
         }
    // return array[array.length-1];
-}
-}
+
+
